@@ -35,7 +35,7 @@
       {{- end -}}
     </div>
     {{ end }}
-    <div class="section-subheading">{{ .name | markdownify | emojify }}</div>
+    {{ with .url }}</a>{{ end }}
      <h3>{{ .name | markdownify | emojify }}</h3>
     {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
   </div>
